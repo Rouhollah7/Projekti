@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="projekti1.css">
+    <script src="projekti1.js">
+    </script>
+</head>
+<body>
+    <div class="keskita">
+        <form class="" action="kiitos.html" method="post" onsubmit="return tarkasta(this)" onreset="return tyhjenna(this)">
+            <h1>Tietojenkeruulomake</h1>
+            <table>
+                <tr>
+                    <td>Anna etunimisi kiitos: </td>
+                    <td class="oikea"><input type="text" name="enimi" value=""></td>
+                </tr>
+                <tr>
+                    <td>Anna sukunimisi Kiitos:</td>
+                    <td class="oikea"><input type="text" name="snimi" value=""></td>
+                </tr>
+                <tr>
+                    <td>Anna sähköposti :</td>
+                    <td class="oikea"><input type="text" name="email" value=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Antaisitko palautetta vielä kotisivustani! Olisin Kiitollinen:</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="oikea"><textarea name="palaute" rows="8" cols="50"></textarea></td>
+                </tr>
+            </table>
+            <p>Valitse näistä toinen: </p>
+            <p>
+                <input type="radio" name="mainos" value="mainos" />
+                Haluan saada mainospostia.<br />
+                <input type="radio" name="mainos" value="eimainos" />
+                En halua mainospostia.
+            </p>
+            <p>
+                Mistä pidät koulussa eniten?
+            </p><p>
+                <input type="checkbox" name="boksi" value="ruoka">Ruoasta<br />
+                <input type="checkbox" name="boksi" value="ammatti">Ammattiaineista<br />
+                <input type="checkbox" name="boksi" value="yto">YTO-aineista<br />
+                <input type="checkbox" name="boksi" value="vapaa">Vapaa-ajasta<br />
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Tarkista lomakke">
+                <input type="reset" name="reset" value="Tyhjenää lomakke">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

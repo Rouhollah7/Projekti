@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+}
+
+form {
+    width: 600px;
+    height: 700px;
+    background-color: cyan;
+    padding: 20px;
+    display: inline-block;
+    left-margin: auto;
+    right-margin: auto;
+    text-align: left;
+    margin-top: 50px;
+    border: 2px solid green;
+    border-radius: 10%;
+}
+
+.keskita {
+    text-align: center;
+}
+
+td {
+    width: 50px;
+}
+
+.oikea {
+    text-align: right;
+}
