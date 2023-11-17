@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="pj1b.css">
+    <script src="pj1b.js" charset="utf-8"></script>
+    <title>Käyttäjätarinat</title>
+</head>
+<body>
+    <h1 id="otsikko">Tervetuloa!</h1>
+    <p id="kuvaus">Täytä alla oleva lomake oikeilla tietoillasi kiitos.</p>
+
+    <form id="kyselylomake" onsubmit="return validateForm()">
+        <label for="nimi">Nimesi:</label>
+        <input type="text" id="nimi" name="nimi" required aria-describedby="nimisyotto">
+        <div id="nimisyotto" class="error">Anna vähintään kolmen merkkinen pitkänimi.</div>
+
+        <label for="email">Sähköpostisi:</label>
+        <input type="email" id="email" name="email" required aria-describedby="emailsyotto">
+        <div id="emailsyotto" class="error">Anna oikea sähköpostiosoite.</div>
+
+        <label for="ika">Ikäsi:</label>
+        <input type="number" id="ika" name="ika" required aria-describedby="ikasyotot">
+        <div id="ikasyotot" class="error">Anna numero väliltä 1-120.</div>
+
+
+        <input type="submit" id="laheta" value="Lähetä">
+    </form>
+
+</body>
+</html>
