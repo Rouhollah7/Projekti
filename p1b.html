@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="p1b.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="p1b.css">
+</head>
+<body>
+    
+   
+
+    <form id="kyselylomake" onsubmit="return lomakke()">
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" required>
+
+        <br>
+
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+
+        <label for="ika">Ikä:</label>
+        <input type="text" id="ika" name="ika" min="18" max="99" required>
+        
+
+        
+
+        <label for="pudotus">mikä on lempiaine koulussa:</label>
+        <select id="pudotus" name="pudotus">
+            <option value="vaihtoehto2">valitse vaihtoehto</option>
+            <option value="vaihtoehto1">Matikka</option>
+            <option value="vaihtoehto2">Ohjelmointi</option>
+            <option value="vaihtoehto2">Liikunta</option>
+            <option value="vaihtoehto2">Äidinkieli</option>
+
+        </select>
+        
+
+        
+        
+            <h3>Ryhmä radio-nappeja:</h3>
+            <input type="radio"  name="ryhma" value="vaihtoehto1">vaihtoehto 1<br />
+            <input type="radio"  name="ryhma" value="vaihtoehto2">vaihtoehto 2 <br />
+       
+        <br />
+        
+            <h3>valitese useita:</h3>
+            <input type="checkbox" id="valintaruutu1" name="valintaruudut" value="valinta1">valinta 1<br />
+            <input type="checkbox" id="valintaruutu2" name="valintaruudut" value="valinta2">valinta 2<br />
+        
+        <br />
+        <br />
+        <label for="lisakommenti">Lisäkommenti:</label>
+        <textarea id="lisakommenti" name="lisakommenti" rows="4" cols="50"></textarea>
+
+        <br>
+
+        <button type="submit" id="laheta">Lähetä</button>
+    </form>
+</body>
+</html>
