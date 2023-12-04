@@ -1,0 +1,56 @@
+body {
+    background-color: red;
+    font-family: 'Arial Nova', sans-serif;
+    font-size: 15px;
+    width: 1100px;
+    margin:20px auto;
+}
+
+#aloitus {
+    width: 60%;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    border-bottom: black dashed 4px;
+}
+
+    header h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    header p {
+        padding: 0;
+        margin-top: 5px;
+        color: #000;
+    }
+
+#tulokset h3 {
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+#tulokset span {
+    color: #000;
+    font-weight: bold;
+}
+section {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+
+#fooot{
+    text-align:center;
+    color:grey;
+}

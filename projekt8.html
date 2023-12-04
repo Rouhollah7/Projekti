@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Scrumboard</title>
+    <link rel="stylesheet" href="projekt8.css"/>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Scrumboard</h1>
+        </header>
+        <div class="board">
+            <div class="page" id="page1">
+                <h2></h2>
+                <input type="text" id="newTaskInput" placeholder="Tehtävän nimi">
+                <button onclick="addNewTask(0)">Lisää</button>
+            </div>
+            <div class="page" id="page2">
+                <h2>uus tehtäväv</h2>
+                <div class="list" id="list1"></div>
+            </div>
+            <div class="page" id="page2">
+                <h2>Tekemässä</h2>
+                <div class="list" id="list1"></div>
+            </div>
+            <div class="page" id="page3">
+                <h2>Tarkastamisessa</h2>
+                <div class="list" id="list2"></div>
+            </div>
+            <div class="page" id="page4">
+                <h2>Valmis</h2>
+                <div class="list" id="list3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="projekt8.js"></script>
+</body>
+</html>

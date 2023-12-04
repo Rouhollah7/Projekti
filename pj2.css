@@ -1,0 +1,16 @@
+.card {
+    width: 100px;
+    height: 150px;
+    background-color: #ccc;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    line-height: 150px;
+    transition: transform 0.5s;
+}
+
+    .card.flipped {
+        transform: rotateY(180deg);
+    }

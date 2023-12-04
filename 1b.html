@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Käyttäjätarina</title>
+    <link rel="stylesheet" type="text/css" href="1b.css">
+</head>
+<body>
+    <h1 id="otsikko">Otsikko</h1>
+    <p id="kuvaus">Lyhyt selitys</p>
+
+    <form id="kyselylomake" onsubmit="return tarkistaLomake()">
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" required minlength="2" aria-describedby="nimisyotto">
+
+        <p id="nimisyotto">Anna vähintään kahden merkin pituinen nimi.</p>
+
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" required aria-describedby="emailsyotto">
+
+        <p id="emailsyotto">Anna oikea sähköpostiosoite.</p>
+
+        <label for="ika">Ikä:</label>
+        <input type="text" id="ika" required min="18" max="99" aria-describedby="ikasyotto">
+
+        <p id="ikasyotto">Anna ikäsi 18-99 välillä.</p>
+
+        <label for="pudotus">Valitse vaihtoehto:</label>
+        <select id="pudotus">
+            <option value="vaihtoehto1">Vaihtoehto 1</option>
+            <option value="vaihtoehto2">Vaihtoehto 2</option>
+        </select>
+
+        <fieldset>
+            <legend>Ryhmä radionäppäimiä</legend>
+            <label for="radio1">Vaihtoehto 1</label>
+            <input type="radio" id="radio1" name="radioGroup" value="vaihtoehto1">
+            <label for="radio2">Vaihtoehto 2</label>
+            <input type="radio" id="radio2" name="radioGroup" value="vaihtoehto2">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Valintaruudut</legend>
+            <input type="checkbox" id="checkbox1" value="valinta1">
+            <label for="checkbox1">Valinta 1</label>
+
+            <input type="checkbox" id="checkbox2" value="valinta2">
+            <label for="checkbox2">Valinta 2</label>
+        </fieldset>
+
+        <textarea id="lisakommentit" placeholder="Lisäkommentit"></textarea>
+
+        <button type="submit" id="laheta">Lähetä</button>
+    </form>
+
+    <script src="1b.js"></script>
+
+</body>
+</html>
